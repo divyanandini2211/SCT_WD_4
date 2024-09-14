@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Light pink gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 30px;
+    max-width: 460px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.6em;
+}
+
+.inputdiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="datetime-local"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="datetime-local"]:focus {
+    border-color: #ff6f61; /* Light pink */
+}
+
+button {
+    padding: 10px 20px;
+    border: 2px solid #000; /* Black border */
+    border-radius: 8px;
+    background-color: white;
+    color: #000; /* Black text color */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+ul h2 {
+    text-align: left;
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+li .task-content {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li .task-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+li.completed {
+    background-color: #e0ffe0;
+    color: #28a745;
+}
+
+button.complete {
+    color: #28a745; /* Green text for complete */
+}
+
+button.complete:hover {
+    background-color: #e0ffe0; /* Light green background on hover */
+    color: #28a745; /* Green text color */
+}
+
+button.delete {
+    color: #ff4d4d; /* Red text for delete */
+}
+
+button.delete:hover {
+    background-color: #ffcccc; /* Light red background on hover */
+    color: #ff4d4d; /* Red text color */
+}
+
+button.edit {
+    color: #007bff; /* Blue text for edit */
+}
+
+button.edit:hover {
+    background-color: #e7f0ff; /* Light blue background on hover */
+    color: #007bff; /* Blue text color */
+}
+
+@media (max-width: 600px) {
+    .inputdiv {
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    input[type="text"], input[type="datetime-local"] {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
